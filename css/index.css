@@ -3,6 +3,7 @@
 	--site-color-02: #F5F5F5; /*background*/
 	--site-color-highlight: #808080; /*highlight for underlines etc*/
 	--site-color-text: #333333; /*all text color*/
+	font-size: 62.5%;
 }
 
 body {
@@ -13,13 +14,12 @@ body {
 .content-container {
 	max-width: 1000px;
 	margin: 0 auto;
-	width: 100%;
 	padding: 0 20px;
 }
 
 p {
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 1.6rem;
 	color: var(--site-color-text)
 }
 
@@ -29,27 +29,27 @@ a {
 
 h1 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 96px;
-	line-height: 106px;
+	font-size: 9.6rem;
+	line-height: 1.1;
 	color: var(--site-color-text)
 }
 
 h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 32px;
+	font-size: 3.2rem;
 	font-weight: 600;
 	color: var(--site-color-text)
 }
 
 h3 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 28px;
+	font-size: 2.8rem;
 	color: var(--site-color-text)
 }
 
 h4 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 22px;
+	font-size: 2.2rem;
 	font-weight: 600;
 	color: var(--site-color-text);
 }
@@ -77,8 +77,8 @@ h4 {
 
 .header-main-home h3 {
 	padding: 0 10px;
-	line-height: 60px;
-	font-size: 18px;
+	line-height: 3;
+	font-size: 1.8rem;
 	font-weight: 600;
 }
 
@@ -116,6 +116,7 @@ h4 {
 
 .header-main-nav ul li a {
 	padding: 0 10px;
+	font-size: 1.6rem;
 	font-family: 'Roboto', sans-serif;
 	line-height: 60px;
 	color: var(--site-color-text);
@@ -137,10 +138,7 @@ main {
 	height: calc(100vh - 60px);
 	background-color: var(--site-color-02);
 	margin-top: 60px;
-	/*background-image: url(../img/Portrait.jpg);*/
 	background-size: 70vh;
-	background-repeat: no-repeat;
-	background-position: bottom left calc(50% + 80px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -150,6 +148,7 @@ main {
 
 main .home-image img {
 	width: 340px;
+	max-width: 100%;
 	border-radius: 300px;
 }
 
@@ -175,7 +174,7 @@ main .home-image img {
 
 .about-blurb h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 32px;
+	font-size: 3.2rem;
 	font-weight: 600;
 }
 /* end about me section */
@@ -201,13 +200,13 @@ main .home-image img {
 
 .projects-blurb h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 32px;
+	font-size: 3.2rem;
 	font-weight: 600;
 }
 
 .projects-blurb p {
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 .projects-container-sub {
@@ -256,18 +255,19 @@ main .home-image img {
 
 .contact-image img {
 	width: 200px;
+	max-width: 100%;
 	border-radius: 100px;
 }
 
 .contact-blurb h2 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 32px;
+	font-size: 3.2rem;
 	font-weight: 600;
 }
 
 .contact-blurb a {
 	font-family: 'Roboto', sans-serif;
-	font-size: 26px;
+	font-size: 2.6rem;
 	font-weight: 600;
 	color: var(--site-color-highlight);
 	transition: all ease-in-out 100ms;
@@ -275,7 +275,7 @@ main .home-image img {
 
 .contact-blurb a:hover {
 	font-family: 'Roboto', sans-serif;
-	font-size: 26px;
+	font-size: 2.6rem;
 	font-weight: 600;
 	color: var(--site-color-highlight);	
 	border-bottom: 3px solid var(--site-color-highlight);
@@ -301,3 +301,81 @@ main .home-image img {
 }
 
 /* end footer section */
+
+
+
+
+
+/* mobile version */
+@media only screen and (max-width: 600px){
+	.content-container {
+		max-width: 100%;
+	}
+
+    main {
+        flex-direction: row;
+        column-gap: 0;
+        align-items:center;
+		justify-content:space-around;
+    }
+    main .home-image img {
+        width: 100%;
+    }
+	main .home-headline p {
+		font-size: 1.5rem;
+	}
+	h1 {
+		font-size: 5rem;
+		line-height: 1.1;
+	}
+	.header-main-nav{
+		display: none;
+	}
+
+
+	/*about*/
+	.about-container {
+		padding-top: 50px;
+        flex-direction: row;
+        column-gap: 0;
+        align-items:center;
+		justify-content:space-around;
+	}
+	
+	.about-image img {
+		display: none;
+	}
+	.about-blurb h2 {
+		text-align: right;
+	}
+
+	/*projects*/
+	.projects-blurb {
+		text-align: left;
+
+	}
+
+	/* contact */
+	.contact-container {
+		padding-top: 50px;
+		flex-direction: row;
+		column-gap: 0;
+		align-items:center;
+		justify-content:space-around;
+	}
+
+	.contact-image img {
+		display: none;
+	}
+
+	.contact-blurb h2 {
+		text-align: right;
+
+	}
+
+	/* footer*/
+	.footer-main p {
+		width: 80%;
+	}
+
+}
