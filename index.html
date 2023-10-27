@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tom Conway | Web Developer</title>
+	<!-- google font cdn links -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+	<!-- reset css styling to cross browser design.'New CSS Reset'-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-<h2>Coming Soon.</h2>
+	<!-- start header section -->
+	<header class="header-main">
+		<div class="header-main-home">
+			<h3><a href="#">Tom Conway</a></h3>
+		</div>
+		<nav class="header-main-nav">
+			<ul>
+				<li><a href="#aboutme">About</a></li>
+				<li><a href="#projects">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- end header section -->
+
+
+
+	<div class="content-container">
+		<!-- begin home section -->
+		<main>
+			<div class="home-headline">
+				<!-- 5 words seems to be the sweet spot -->
+				<h1>Hi there!<br> I'm Tom.</h1>
+				<!-- 14-20 words seems to be the sweet spot -->
+				<p>A web developer with a life-long love of learning.</p>
+			</div>
+			<div class="home-image">
+				<img src="resources/portrait.jpg" alt="tom portrait">
+			</div>
+		</main>
+		<!-- end home section -->
+
+
+
+
+		<!-- begin about section -->
+		<section id = "aboutme" >
+			<div class="about-container">
+				<div class="about-image">
+					<img src="resources/map.jpg" alt="tom portrait">
+				</div>
+				<div class="about-blurb">
+					<h2>About Me.</h2>
+					<p>I am a web developer proficient in HTML, CSS, JavaScript, Bootstrap, and Python. 
+						<br>My path to the world of development was a winding one, with experiences in monolithic commercial banks, fast-paced and high-stakes Wall Street fintech, and cutting-edge SoCal startups.
+						<br>Fueled by an insatiable curiosity, I firmly believe that continuous learning is pivotal for personal and professional growth in the ever-evolving digital landscape.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- end about section -->
+
+		<!-- begin projects section -->
+		<section id = "projects">
+			<div class="projects-container">
+				
+				
+				<div class="projects-blurb">
+					<h2>Projects.</h2>
+					<p>Single line of project summary placeholder text.</p>
+				</div>
+
+
+				<div class="projects-container-sub">
+					<div class="project-details">
+						<img src="resources/editing.jpg" alt="projectone">
+						<h4>Project One</h4>
+						<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</p>
+					</div>
+					<div class="project-details">
+						<img src="resources/editing.jpg" alt="projecttwo">
+						<h4>Project Two</h4>
+						<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</p>
+					</div>
+					<div class="project-details">
+						<img src="resources/editing.jpg" alt="projectthree">
+						<h4>Project Three</h4>
+						<p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end projects section -->
+
+		<!-- begin contact section -->
+		<section id = "contact" >
+			<div class="contact-container">
+				<div class="contact-blurb">
+					<h2>Contact me.</h2>
+					<p>I'm open to all possibilities! Let's <a href = "mailto: thomasconwayjr@gmail.com">connect</a> and create something amazing together.</p>
+				</div>
+				<div class="contact-image">
+					<img src="resources/mail.jpg" alt="mail">
+				</div>
+			</div>
+		</section>
+		<!-- end contact section -->
+	</div>
+
+
+	<!-- start footer section -->
+	<footer>
+		<div class="footer-main">
+			<p>Transforming ideas into realities through technology and innovation.</p>
+		</div>
+	</footer>
+	<!-- end footer section -->
+
 </body>
+
 </html>
